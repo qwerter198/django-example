@@ -17,10 +17,10 @@
 3. 建立完之後路徑如下
     
     ```markdown
-    |djangosite			        項目根目錄
+    |djangosite					項目根目錄
     ├── djangosite				項目名稱
     │   ├── __init__.py			inti文件，標識當前所在的項目目錄是一個 Python 包
-    │   ├── asgi.py             定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
+    │   ├── asgi.py				定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
     │   ├── settings.py			Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
     │   ├── urls.py				url路徑文件
     │   └── wsgi.py				定義WSGI的介面資訊(用於其他Web伺服器整合)
@@ -49,7 +49,7 @@
     │   └── views.py			定義URL回應函數
     ├── djangosite				項目名稱
     │   ├── __init__.py			inti文件，標識當前所在的項目目錄是一個 Python 包
-    │   ├── asgi.py             定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
+    │   ├── asgi.py				定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
     │   ├── settings.py			Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
     │   ├── urls.py				url路徑文件
     │   └── wsgi.py				定義WSGI的介面資訊(用於其他Web伺服器整合)
@@ -72,7 +72,7 @@
     │   └── views.py			定義URL回應函數
     ├── djangosite				項目名稱
     │   ├── __init__.py			inti文件，標識當前所在的項目目錄是一個 Python 包
-    │   ├── asgi.py             定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
+    │   ├── asgi.py				定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
     │   ├── settings.py			Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
     │   ├── urls.py				url路徑文件
     │   └── wsgi.py				定義WSGI的介面資訊(用於其他Web伺服器整合)
