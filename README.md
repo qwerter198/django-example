@@ -17,14 +17,14 @@
 3. 建立完之後路徑如下
     
     ```markdown
-    |djangosite							  項目根目錄
-    ├── djangosite						項目名稱
-    │   ├── __init__.py				inti文件，標識當前所在的項目目錄是一個 Python 包
-    │   ├── asgi.py           定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
-    │   ├── settings.py				Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
-    │   ├── urls.py						url路徑文件
-    │   └── wsgi.py						定義WSGI的介面資訊(用於其他Web伺服器整合)
-    └── manage.py						  是Django用於管理本專案的命令列工具(之後進行網站執行、資料庫自動生成、靜態檔案收集等)
+    |djangosite			        項目根目錄
+    ├── djangosite				項目名稱
+    │   ├── __init__.py			inti文件，標識當前所在的項目目錄是一個 Python 包
+    │   ├── asgi.py             定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
+    │   ├── settings.py			Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
+    │   ├── urls.py				url路徑文件
+    │   └── wsgi.py				定義WSGI的介面資訊(用於其他Web伺服器整合)
+    └── manage.py				是Django用於管理本專案的命令列工具(之後進行網站執行、資料庫自動生成、靜態檔案收集等)
     ```
     
 4. 建立應用(為了在專案符合MVC要建立Django應用，每個Django專案可以包含多個Django應用)
@@ -37,46 +37,46 @@
 5. 建立應用完成後路徑如下
     
     ```markdown
-    |djangosite							  項目根目錄
-    ├── app							      應用程式名稱
-    │   ├── migrations				数据模型迁移记录目录
+    |djangosite					項目根目錄
+    ├── app						應用程式名稱
+    │   ├── migrations			数据模型迁移记录目录
     │   │   └── __init__.py		inti文件，標識當前所在的應用目錄是一個 Python 包
-    │   ├── __init__.py				inti文件，標識當前所在的應用目錄是一個 Python 包
-    │   ├── admin.py					管理網站模型的宣告檔案，預設為空
-    │   ├── apps.py						應用資訊定義檔案(類別AppConfig用於定義應用名等Meta資料)
-    │   ├── models.py					增加模型層資料類別的檔案
-    │   ├── tests.py					測試程式檔案
-    │   └── views.py					定義URL回應函數
-    ├── djangosite						項目名稱
-    │   ├── __init__.py				inti文件，標識當前所在的項目目錄是一個 Python 包
-    │   ├── asgi.py           定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
-    │   ├── settings.py				Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
-    │   ├── urls.py						url路徑文件
-    │   └── wsgi.py						定義WSGI的介面資訊(用於其他Web伺服器整合)
-    └── manage.py						  是Django用於管理本專案的命令列工具(之後進行網站執行、資料庫自動生成、靜態檔案收集等)
+    │   ├── __init__.py			inti文件，標識當前所在的應用目錄是一個 Python 包
+    │   ├── admin.py			管理網站模型的宣告檔案，預設為空
+    │   ├── apps.py				應用資訊定義檔案(類別AppConfig用於定義應用名等Meta資料)
+    │   ├── models.py			增加模型層資料類別的檔案
+    │   ├── tests.py			測試程式檔案
+    │   └── views.py			定義URL回應函數
+    ├── djangosite				項目名稱
+    │   ├── __init__.py			inti文件，標識當前所在的項目目錄是一個 Python 包
+    │   ├── asgi.py             定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
+    │   ├── settings.py			Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
+    │   ├── urls.py				url路徑文件
+    │   └── wsgi.py				定義WSGI的介面資訊(用於其他Web伺服器整合)
+    └── manage.py				是Django用於管理本專案的命令列工具(之後進行網站執行、資料庫自動生成、靜態檔案收集等)
     ```
     
 6. 新增測試網頁(在djangosite/app/viesw.py中建立一個路由回應函數)
     
     ```markdown
-    |djangosite							  項目根目錄
-    ├── app							      應用程式名稱
-    │   ├── migrations				数据模型迁移记录目录
+    |djangosite					項目根目錄
+    ├── app						應用程式名稱
+    │   ├── migrations			数据模型迁移记录目录
     │   │   └── __init__.py		inti文件，標識當前所在的應用目錄是一個 Python 包
-    │   ├── __init__.py				inti文件，標識當前所在的應用目錄是一個 Python 包
-    │   ├── admin.py					管理網站模型的宣告檔案，預設為空
-    │   ├── apps.py						應用資訊定義檔案(類別AppConfig用於定義應用名等Meta資料)
-    │   ├── models.py					增加模型層資料類別的檔案
-    │   ├── tests.py					測試程式檔案
-    │   ├── urls.py					  應用程式url路徑文件
-    │   └── views.py					定義URL回應函數
-    ├── djangosite						項目名稱
-    │   ├── __init__.py				inti文件，標識當前所在的項目目錄是一個 Python 包
-    │   ├── asgi.py           定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
-    │   ├── settings.py				Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
-    │   ├── urls.py						url路徑文件
-    │   └── wsgi.py						定義WSGI的介面資訊(用於其他Web伺服器整合)
-    └── manage.py						  是Django用於管理本專案的命令列工具(之後進行網站執行、資料庫自動生成、靜態檔案收集等)
+    │   ├── __init__.py			inti文件，標識當前所在的應用目錄是一個 Python 包
+    │   ├── admin.py			管理網站模型的宣告檔案，預設為空
+    │   ├── apps.py				應用資訊定義檔案(類別AppConfig用於定義應用名等Meta資料)
+    │   ├── models.py			增加模型層資料類別的檔案
+    │   ├── tests.py			測試程式檔案
+    │   ├── urls.py				應用程式url路徑文件
+    │   └── views.py			定義URL回應函數
+    ├── djangosite				項目名稱
+    │   ├── __init__.py			inti文件，標識當前所在的項目目錄是一個 Python 包
+    │   ├── asgi.py             定義ASGI的介面資訊(ASGI是非同步Web伺服器和應用程式的python標準)
+    │   ├── settings.py			Django的專案設定檔(設定django相關設定，資料庫參數與python套件等)
+    │   ├── urls.py				url路徑文件
+    │   └── wsgi.py				定義WSGI的介面資訊(用於其他Web伺服器整合)
+    └── manage.py				是Django用於管理本專案的命令列工具(之後進行網站執行、資料庫自動生成、靜態檔案收集等)
     ```
     
     ```python
