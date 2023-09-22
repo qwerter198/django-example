@@ -1,2 +1,2 @@
-# backend
-backend test
+Django Example
+
