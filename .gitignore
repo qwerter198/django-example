@@ -4,3 +4,4 @@ __pycache__/
 *.pyc
 .tox/
 .mypy_cache/
+.DS_Store
